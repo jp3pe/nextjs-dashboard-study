@@ -1,0 +1,31 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+	    {
+		"type": "chrome",
+		"request": "launch",
+		"name": "Launch Chrome against localhost",
+		"url": "http://localhost:3000",
+		"webRoot": "${workspaceFolder}"
+	    },
+	    {
+		"type": "firefox",
+		"request": "launch",
+		"name": "Launch Firefox against localhost",
+		"url": "http://localhost:3000",
+		"webRoot": "${workspaceFolder}",
+		"firefoxExecutable": "C:/Program Files/WindowsApps/Mozilla.MozillaFirefox_126.0.1.0_x64__gmpnhwe7bv608/VFS/ProgramFiles/MozillaFirefox Package Root/firefox.exe"
+	    },
+	    {
+		"type": "node",
+		"request": "launch",
+		"name": "Launch via NPM",
+		"runtimeExecutable": "npm",
+		"runtimeArgs": [
+		    "run-script",
+		    "dev"
+		],
+		"port": 9229
+	    }
+	]
+    }
